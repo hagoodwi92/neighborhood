@@ -8,7 +8,46 @@ function displayNumbers (input) {
 
 
   }
-  
+
+function containsOne (input) {
+  const numberArray = input.toString().split('');
+
+  for (let i = 0; i < numberArray.length; i++) {
+    if (numberArray[i] === "1")  {
+      output = numberArray[i].replace("1", "Beep!");
+      alert(output);
+      break;
+    }
+  }
+}
+
+function containsTwo (input) {
+  const numberArray = input.toString().split('');
+
+  for (let i = 0; i < numberArray.length; i++) {
+    if (numberArray[i] === "2")  {
+      output = numberArray[i].replace("2", "Boop!");
+      alert(output);
+      break;
+    }
+  }
+}
+
+
+function containsThree (input) {
+  const numberArray = input.toString().split('');
+
+  for (let i = 0; i < numberArray.length; i++) {
+    if (numberArray[i] === "3")  {
+      output = numberArray[i].replace("3", "Won't you be my neighbor?");
+      alert(output);
+      break;
+    }
+  }
+}
+
+
+
 
 //ui
 $(document).ready(function(){
