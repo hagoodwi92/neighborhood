@@ -1,12 +1,15 @@
 //business
 function displayNumbers (input) {
-  const numberArray = [];
+  
   let output = 0;
+  let numberArray = [];
   //const numberArray = input.toString().split('');
   for (let i = 0; i <= input; i++) {
     output = i;
-    alert(output);
+    numberArray.push(output);
+    
   }
+  return numberArray;
 }
   
 
