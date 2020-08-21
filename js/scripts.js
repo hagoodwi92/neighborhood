@@ -3,28 +3,35 @@ function displayNumbers (input) {
   
   let output = 0;
   let numberArray = [];
-  //const numberArray = input.toString().split('');
+  
   for (let i = 0; i <= input; i++) {
     output = i;
     numberArray.push(output);
     
   }
-  return containsTwo(numberArray);
+  
+  
+  return numberArray;
 
+}
+
+function contain (array)  {
+  array.toString().split("");
+  return array;
 }
   
 
 function containsOne (input) {
-  const numberArray = input.toString().split('');
+  const array = [input];
 
-  for (let i = 0; i < numberArray.length; i++) {
-    if (numberArray[i] === "1")  {
-      output = numberArray[i].replace("1", "Beep!");
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === "1")  {
+      output = array[i].replace("1", "Beep!");
       return output;
-      //break;
+      break;
     }
     else {
-      return numberArray;
+      return array;
     }
   }
 }
