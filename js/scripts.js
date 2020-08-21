@@ -1,8 +1,14 @@
 //business
+function displayNumbers (input) {
+  let output = 0;
+  for (let i = input; i >= 0; i--) {
+    alert(output);
+    output++;
+    }
 
 
-
-
+  }
+  
 
 //ui
 $(document).ready(function(){
@@ -10,7 +16,7 @@ $(document).ready(function(){
     event.preventDefault();
     
     let userInput = $("input1#input").val();
-    let output = 0;
+    const numberArray = userInput.split('');
 
 
 

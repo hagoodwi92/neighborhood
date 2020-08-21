@@ -15,14 +15,16 @@ Input: "4"
 Output: "0, 1, 2, 3, 4"
 
 Spec: For numbers that contain a 1, the program returns all digits replaced with "Beep!"
-Input:
-Output:
+Input: "15"
+Output: "Beep!"
+
 Spec: For numbers that contain a 2, the program returns all digits replaced with "Boop!"
-Input:
-Output:
+Input: "25"
+Output: "Boop!"
+
 Spec: For numbers that contain a 3, the program returns all digits replaced with "Won't you be my neighbor?"
-Input:
-Output:
+Input: "31"
+Output: "Won't you be my neighbor?"
 
 ## Setup/Installation Requirements
 
