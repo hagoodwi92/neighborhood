@@ -1,13 +1,14 @@
 //business
 function displayNumbers (input) {
+  const numberArray = [];
   let output = 0;
-  for (let i = input; i >= 0; i--) {
-    return output;
-    output++;
-    }
-
-
+  //const numberArray = input.toString().split('');
+  for (let i = 0; i <= input; i++) {
+    output = i;
+    alert(output);
   }
+}
+  
 
 function containsOne (input) {
   const numberArray = input.toString().split('');
@@ -53,18 +54,7 @@ function containsThree (input) {
 $(document).ready(function(){
   $("#formOne").submit(function(event){
     event.preventDefault();
-    const userInput = $("input#input1").val();
-    
-    //let output = containsOne(userInput);
-    //output = containsTwo(userInput);
-    //output = containsThree(userInput);
-    output = displayNumbers(userInput);
-    //let output2 = containsOne(userInput);
-    output = $("#output1").text(output);
-
-    //$("#output2").text(userInput);
-    //$("#output3").text(userInput);
-    
+    const userInput = [parseInt($("input#input1").val())];
     
 
 
