@@ -15,41 +15,48 @@ function displayNumbers (input) {
 
 }
 function containsOne(array) {
+  array = array.toString().split('');
+  alert(array);
   for(let i = 0; i < array.length; i++)  {
     if(array [i] == 1 ){
       array[i] = "Beep!";
+      array[i+1] = ", ";
     }
     
     //if ( array[i] === "1"){
     //array [i] = "Beep!";
    }
-   return array;
+   return array.join('');
     
   }
 
 function containsTwo(array) {
+  array = array.toString().split('');
   for(let i = 0; i < array.length; i++)  {
     if(array [i] == 2){
       array[i] = "Boop!";
+      array[i+1] = " ,";
     }
     
     //if ( array[i] === "1"){
     //array [i] = "Beep!";
     }
-    return array;
+    return array.join('');
     
   }
 
 function containsThree(array) {
+  array = array.toString().split('');
   for(let i = 0; i < array.length; i++)  {
     if(array [i] == 3){
       array[i] = "Won't you be my neighbor!";
+      array[i+1] = ", ";
     }
     
     //if ( array[i] === "1"){
     //array [i] = "Beep!";
     }
-    return array;
+    return array.join('');
     
   }
 
@@ -115,6 +122,9 @@ $(document).ready(function(){
     userInput = displayNumbers(userInput);
     //userInput = containsThree(userInput);
     
+    userInput = containsThree(userInput);
+    userInput = containsTwo(userInput);
+    userInput = containsOne(userInput);
     
     $("#output1").text(userInput);
 
