@@ -16,7 +16,6 @@ function displayNumbers (input) {
 }
 function containsOne(array) {
   array = array.toString().split('');
-  alert(array);
   for(let i = 0; i < array.length; i++)  {
     if(array [i] == 1 ){
       array[i] = "Beep!";
@@ -45,20 +44,20 @@ function containsTwo(array) {
     
   }
 
-function containsThree(array) {
-  array = array.toString().split('');
-  for(let i = 0; i < array.length; i++)  {
-    if(array [i] == 3){
-      array[i] = "Won't you be my neighbor!";
-      array[i+1] = ", ";
+  function containsThree(array) {
+    array = array.toString().split('');
+    for(let i = 0; i < array.length; i++)  {
+      if(array [i] == 3){
+        array[i] = "Won't you be my neighbor?";
+        array[i+1] = " ,";
+      }
+      
+      //if ( array[i] === "1"){
+      //array [i] = "Beep!";
+      }
+      return array.join('');
+      
     }
-    
-    //if ( array[i] === "1"){
-    //array [i] = "Beep!";
-    }
-    return array.join('');
-    
-  }
 
 
 
@@ -119,12 +118,13 @@ $(document).ready(function(){
     event.preventDefault();
     let userInput = [($("input#input1").val())];
 
-    userInput = displayNumbers(userInput);
-    //userInput = containsThree(userInput);
     
+    //userInput = containsThree(userInput);
+    userInput = displayNumbers(userInput);
     userInput = containsThree(userInput);
     userInput = containsTwo(userInput);
     userInput = containsOne(userInput);
+    
     
     $("#output1").text(userInput);
 
