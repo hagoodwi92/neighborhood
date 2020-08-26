@@ -34,7 +34,7 @@ Repo: [My Github] (https://github.com/hagoodwi92/neighborhood).
 
 
 ## Known Bugs
-YES: This project is not complete yet. 
+None. 
 
 
 
